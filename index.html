@@ -11,53 +11,90 @@
             background-color: #121212;
             color: #ffffff;
             text-align: center;
-            padding: 50px 20px;
+            padding: 40px 20px;
+            margin: 0;
+        }
+        .header {
+            margin-bottom: 40px;
         }
         h1 {
             color: #00ffcc;
             font-size: 3rem;
             margin-bottom: 10px;
         }
-        p {
+        .subtitle {
             color: #aaaaaa;
             font-size: 1.2rem;
-            max-width: 600px;
+            max-width: 700px;
             margin: 0 auto 30px auto;
         }
-        .download-box {
-            background-color: #1e1e1e;
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .card {
+            background: #1e1e1e;
             padding: 30px;
-            border-radius: 15px;
-            display: inline-block;
-            border: 2px solid #333;
-            box-shadow: 0px 10px 20px rgba(0,0,0,0.5);
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+            margin-bottom: 30px;
+            text-align: left;
+            border-left: 5px solid #00ffcc;
         }
-        .btn {
+        .card h2 {
+            color: #ffffff;
+            margin-top: 0;
+            font-size: 1.8rem;
+        }
+        .card p {
+            color: #cccccc;
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+        .download-btn {
             background-color: #00ffcc;
-            color: #000;
-            padding: 15px 40px;
-            font-size: 1.3rem;
+            color: #121212;
+            border: none;
+            padding: 12px 25px;
+            font-size: 1.1rem;
             font-weight: bold;
-            text-decoration: none;
             border-radius: 8px;
+            cursor: pointer;
+            transition: 0.3s ease;
+            text-decoration: none;
             display: inline-block;
-            transition: 0.3s;
+            margin-top: 15px;
         }
-        .btn:hover {
+        .download-btn:hover {
             background-color: #00b38f;
-            transform: scale(1.05);
+            transform: translateY(-2px);
+        }
+        a {
+            text-decoration: none;
         }
     </style>
 </head>
 <body>
 
-    <h1>Chakresh</h1>
-    <p>Welcome to the official website of Chakresh. This platform hosts custom game files, modifications, and downloads created and maintained by Chakresh.</p>
+    <div class="header">
+        <h1>Chakresh</h1>
+        <p class="subtitle">Welcome to the official website of Chakresh. This platform hosts custom game files, modifications, and downloads created and maintained by Chakresh.</p>
+    </div>
 
-    <div class="download-box">
-        <h3>Chakresh Game Files</h3>
-        <p style="font-size: 1rem; margin-bottom: 20px;">Click below to safely download the official game files from Google Drive.</p>
-        <a href="#" class="btn" target="_blank">Download Files</a>
+    <div class="container">
+
+        <div class="card">
+            <h2>MINECRAFT PC</h2>
+            <p>Download the official files and launchers for Minecraft PC setup. Clean and optimized configurations maintained for the best performance.</p>
+            <a href="https://tlauncher.org" target="_blank" class="download-btn">Continue Reading / Download</a>
+        </div>
+
+        <div class="card">
+            <h2>MINECRAFT MOBILE</h2>
+            <p>Get ready for pocket edition files, custom texture modifications, and maps optimized for Android and iOS systems.</p>
+            <a href="YOUR_GOOGLE_DRIVE_MOBILE_LINK_HERE" target="_blank" class="download-btn">Continue Reading / Download</a>
+        </div>
+
     </div>
 
 </body>
